@@ -1,0 +1,243 @@
+/* Global Styles */
+body {
+  font-family: Roboto;
+  background-image: url("./a.jpg"); 
+  /* background: linear-gradient(to LEFT, rgba(13, 0, 255, 0),rgba(224, 213, 255, 0.5),rgba(155, 147, 255, 0.5),rgba(104, 77, 255, 0.5),rgba(62, 23, 255, 0.5),rgba(20, 0, 242, 0.5)); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+font-weight: bold;
+height:fit-content;
+color:black;
+margin:auto;
+
+}
+
+.custom-button {
+  /* background-color: #060c5c;  */
+  color: rgb(0, 0, 0);
+}
+
+.custom-button:hover {
+  background-color: #000000;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(167, 238, 238, 0.8); 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.hero-card, .dropdown-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: rgba(0, 151, 159, 0.2);
+  color: rgb(0, 0, 0);
+ 
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.file-upload-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #000000;
+}
+
+.file-upload-label mat-icon {
+  margin-right: 5px;
+}
+
+/* Dropdown Section */
+.dropdown-container {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(42, 248, 255, 0.2); 
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card {
+  margin-top: 10px;
+  padding: 20px;
+  /* background-color: rgba(0, 0, 0, 0.2);  */
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(42, 248, 255, 0.2); 
+  color: rgb(0, 0, 0);
+}
+
+/* Features Section */
+.features-section {
+  padding: 40px 20px;
+ 
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.features-section h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.feature-card {
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  /* background-color: rgba(0, 0, 0, 0.2);  */ background-color: rgba(6, 230, 238, 0.2);
+  border-radius: 4px; /* Keep the default or custom border-radius */
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  font-weight: bold;
+  font-family: Roboto;
+}
+
+.colored-expansion-panel {
+  /* background-color: rgba(0, 144, 152, 0.2); */
+  background-color: rgba(0, 151, 159, 0.2);
+  color: rgb(0, 0, 0);
+  border-radius: 4px; /* Keep the default or custom border-radius */
+  font-family: Roboto;
+}
+
+.colored-expansion-panel .mat-expansion-panel-header {
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: #000000;
+  border-radius: 4px; /* Keep the default or custom border-radius */
+  font-family: Roboto;
+}
+
+.colored-expansion-panel .mat-expansion-panel-content {
+  background-color: rgba(235, 199, 234, 0.2); 
+  color: #000000;
+  border-radius: 4px; /* Keep the default or custom border-radius */
+  font-family: Roboto;
+}
+
+/* Upload Section */
+.upload-section {
+  text-align: center;
+  padding: 40px 20px;
+  
+  /* background-color: #0c00f5; */
+}
+
+.upload-card {
+  max-width: 500px;
+  margin: auto;
+  background-color: rgba(216, 230, 235, 0.2);
+  
+  background-size: cover; /* Cover the entire card */
+  background-position: center; /* Center the background image */
+  box-shadow: 0px 3px 6px rgba(70, 64, 64, 0.16);
+  border-radius: 4px; /* Keep the default or custom border-radius */
+}
+
+.upload-card mat-card-content {
+  padding: 20px;
+  background-color: rgba(216, 230, 235, 0.2);
+  border-radius: 4px; /* Keep the default or custom border-radius */
+}
+
+.upload-card h2 {
+  margin-bottom: 20px;
+}
+
+.upload-card input[type="file"] {
+  margin-bottom: 20px;
+}
+
+.upload-card button {
+  margin-top: 20px;
+  /* background-color: #180058; */
+}
+
+.feature-card {
+  margin: 10px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: rgba(0, 255, 247, 0.3);
+  border-radius: 4px; /* Keep the default or custom border-radius */
+  font-weight: bold;
+}
+
+.feature-image {
+  width: 100%;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: block;
+  font-weight: bold;
+
+}
+.transparent-green-button {
+  /* background-color: rgba(0, 255, 213, 0.5);   */
+  color: rgb(0, 0, 0);  
+}
+
+.mat-panel-title {
+  display: flex;
+  align-items: center;
+  
+}
+
+.mat-panel-title mat-icon {
+  margin-right: 8px; 
+}

@@ -1,0 +1,302 @@
+/* Ensure all text is white */
+body {
+  background-size: cover;
+  border-radius: 0%;
+  background-repeat: no-repeat;
+  font-weight: bold;
+  height: fit-content;
+  background-image: url("./p.jpg");
+  /* background-color: rgb(0, 0, 0); */
+  color: rgb(0, 0, 0); /* Ensures all text is white */
+   background-position: center;
+   margin:0cm;
+   font-family:Roboto;
+}
+
+.custom-button {
+  color: rgb(0, 0, 0);
+}
+/* 
+.custom-button:hover {
+  background-color: #f8f8f8;
+} */
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 80%;
+  font-weight: bold;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  font-weight: bold;
+  /* margin: 10px; */
+  /* background-color: rgba(255, 255, 255, 0.8);  */
+  /* color: rgb(0, 0, 0); */
+}
+
+.incident-info-card {
+  order: 1; /* Ensures this card is first (left) */
+}
+
+.chart-card {
+  order: 2; /* Ensures this card is second (right) */
+  background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+  font-weight: bold;
+}
+
+.hero-text {
+  padding: 20px;
+  font-weight: bold;
+}
+
+.hero-image {
+  flex: 1;
+}
+
+.hero-image video {
+  width: 100%;
+  height: auto;
+  font-weight: bold;
+  object-fit: cover;
+}
+
+.tabs-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  
+}
+
+.feature-card {
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: rgba(255, 255, 255, 0.8); 
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.feature-card h2 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.centered-title {
+  text-align: center;
+  font-weight: bolder;
+  font-weight: bold;
+}
+
+.mat-tab-group {
+  background-color: rgba(255, 255, 255, 0.8); 
+   font-weight: bold; 
+
+}
+
+/* Updated CSS for tab titles */
+.mat-tab-header .mat-tab-label, 
+.mat-tab-header .mat-tab-label-active {
+  color: rgb(0, 0, 0) !important; /* Ensures all tab titles are white */
+  font-weight: bold;
+}
+
+.mat-tab-body-wrapper {
+  height: auto;
+  font-weight: bold;
+}
+
+.mat-tab-label-container {
+  height: auto;
+  font-weight: bold;
+}
+
+.mat-tab-header {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mat-tab-label {
+  flex: 1;
+  text-align: center;
+  padding: 16px 0;
+  font-weight: bold;
+  
+}
+
+.mat-tab-label-active {
+  font-weight: bold;
+  
+}
+
+.footer-toolbar {
+  color: #000000;
+  position: fixed;
+  font-weight: bold;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.footer-toolbar mat-toolbar {
+  justify-content: space-between;
+  height: 40px;
+  font-weight: bold;
+}
+
+.footer-toolbar a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pro {
+  color: #000000;
+  font-weight: bold;
+}
+
+.tab-content {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* Ensure all child elements inherit the white color unless overridden */
+* {
+  color: inherit;
+  font-weight: bold;
+}
+
+/* Make the text inside mat-tab white */
+.mat-tab-label, .mat-tab-label-active {
+  color: rgb(0, 0, 0) !important;
+  font-weight: bold;
+}
+
+.mat-card-content {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+/* New CSS for incident details and icon */
+.incident-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.incident-text {
+  flex: 1;
+  font-weight: bold;
+}
+
+.incident-icon {
+  flex: 0 0 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.incident-image {
+  width: 100%;
+  font-weight: bold;
+  height: auto;
+  margin-top: 20px;
+}
+
+.transparent-green-button {
+  color: green;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* Additional styles for dynamic classes */
+.incident-detected {
+  background-color: rgba(255, 20, 20, 0.8); 
+  color: #000000;
+  font-weight: bold;
+}
+
+.no-incident-detected {
+  background-color: rgba(62, 213, 3, 0.7); 
+  color: #000000;
+  font-weight: bold;
+}
+
+.incident-icon.detected-icon {
+  color: rgba(255, 187, 0, 0.735);
+  padding-left: 3cm;
+}
+
+.incident-icon.not-detected-icon {
+  color: rgba(10, 76, 0, 0.9);
+  padding-left: 3cm;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* background-color: rgba(42, 248, 255, 0.2);  */

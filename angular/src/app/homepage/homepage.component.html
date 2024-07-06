@@ -1,0 +1,47 @@
+<body>
+  <mat-toolbar color="primary" class="toolbar">
+    <span>Incident Detection and Response</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+  <div class="features-section">
+    <h2>Benefits</h2>
+    <div class="features-grid">
+      <mat-card class="feature-card" *ngFor="let feature of features">
+        <mat-expansion-panel class="colored-expansion-panel">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <mat-icon> {{ feature.icon }}&ensp;</mat-icon>
+              {{ feature.title }}
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-card-content>
+            <p>{{ feature.description }}</p>
+          </mat-card-content>
+        </mat-expansion-panel>
+      </mat-card>
+    </div>
+  </div>
+  <!-- Hero Section moved below Features Section -->
+  <div class="hero">
+    <div class="cards-container">
+      <!-- First Card -->
+      <mat-card class="hero-card">
+        <div class="hero-content">
+          <mat-card-content class="hero-text">
+            <h2>An Intelligent Incident Detection and Response System in Chemical Industry Leveraging Convolutional Neural Networks</h2>
+            <p>This IDR system, leveraging the combined strengths of OpenCV and CNN, offers a promising solution for protecting hazardous consequences of spills, leaks and equipment damages.</p>
+            <div class="file-upload-container">
+              <label for="fileInput" class="file-upload-label">
+                <mat-icon>file_upload</mat-icon>
+                <span>Upload Video</span>
+              </label>
+              <input type="file" id="fileInput" hidden (change)="onFileSelected($event)" accept="video/*">
+             <button mat-icon-button (click)="onUpload()">
+              <mat-icon class="transparent-green-button">send</mat-icon></button>
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</body>

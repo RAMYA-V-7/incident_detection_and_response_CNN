@@ -1,0 +1,70 @@
+<body>
+  <mat-toolbar color="primary" class="toolbar">
+    <span>Incident Detection and Response</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+  <div class="tabs-section">
+    <mat-card class="feature-card">
+      <h2 class="centered-title">
+        {{ getMitigationTitle() }}
+      </h2>
+      <mat-tab-group>
+        <mat-tab *ngFor="let technique of activeMitigationTechniques">
+          <ng-template mat-tab-label>
+            <mat-icon>{{ technique.icon }}</mat-icon> {{ technique.title }}
+          </ng-template>
+          <mat-card-content>
+            <p class="tab-content">{{ technique.description }}</p>
+          </mat-card-content>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </div>
+  
+  <div class="hero">
+    <div class="hero-container">
+      <mat-card class="hero-card incident-info-card" [ngClass]="{
+        'incident-detected': classLabel === 'Incident Detected',
+        'no-incident-detected': classLabel === 'No Incident Detected'
+      }">
+        <div class="hero-content">
+          <mat-card-content class="hero-text">
+            <h2>Incident Information</h2>
+            <mat-icon *ngIf="classLabel === 'Incident Detected'" class="incident-icon detected-icon">warning</mat-icon>
+            <mat-icon *ngIf="classLabel === 'No Incident Detected'" class="incident-icon not-detected-icon">check_circle</mat-icon>
+            <div class="incident-details">
+              <div class="incident-text">
+                <p *ngIf="classLabel">Classification: {{ classLabel }} &ensp;&ensp;</p>
+                <p *ngIf="incidentType">Incident Type: {{ incidentType }}</p>
+                <div *ngIf="pred !== null && pred !== undefined">
+                  <p>{{ incidentType }} Prediction: {{ pred | number: '1.2' }}%</p>
+                  <mat-progress-bar class="custom-progress-bar" [value]="pred"></mat-progress-bar>
+                </div>
+              </div>
+            </div>
+          </mat-card-content>
+        </div>
+      </mat-card>
+      
+  
+
+      <mat-card class="hero-card chart-card">
+        <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height:'360px'}"></canvasjs-chart>
+      </mat-card>
+    </div>
+  </div>
+
+
+<br>
+
+<footer class="footer-toolbar">
+  <mat-toolbar color="primary" class="toolbar">
+    <span>References</span>
+    <span class="spacer"></span>
+    <a mat-button href="https://www.istockphoto.com/" target="_blank">IStockphoto</a>
+    <a mat-button href="https://www.shutterstock.com/" target="_blank">Shutterstock</a>
+    <a mat-button href="https://www.analyticsvidhya.com/blog/2021/06/image-processing-using-cnn-a-beginners-guide/" target="_blank">CNN Image Processing Guide</a>
+  </mat-toolbar>
+</footer>
+
+</body>
